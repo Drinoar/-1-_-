@@ -34,3 +34,16 @@ def test_subtract(numbers):
 ])
 def test_multiply(a, b, expected):
     assert multiply(a, b) == expected
+
+
+def test_subtract(numbers):
+    a, b = numbers
+    assert subtract(a, b) == 5
+def test_divide():
+    assert divide(10, 2) == 5
+
+
+
+def test_divide_zero():
+    with pytest.raises(ValueError):
+        divide(5, 0)
