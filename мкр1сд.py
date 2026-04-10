@@ -46,7 +46,7 @@ def sample_file(tmp_path):
     return file
 
 
-# 🔹 TEST читання
+
 def test_read_population_file(sample_file):
     data = read_population_file(sample_file)
 
